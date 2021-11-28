@@ -1,6 +1,6 @@
 
 const stringSize = (text) => {
-return 44;
+return text.length;
 }
 const replaceCharacterE = (text) => {
 return text.replace("e"," ");
@@ -64,31 +64,38 @@ return parseFloat( (weight / (height * height) ).toFixed(2));
 }
 
 const createLanguagesArray = () => {
-
+return languages = ["Html","CSS","Java","PHP"];
 }
 
 const createNumbersArray = () => {
-
+return nombres = [0,1,2,3,4,5];
 }
 
 const replaceElement = (languages) => {
-
+languages.splice(2, 1, "Javascript");
+return languages;
+//https://stackoverflow.com/questions/5915789/how-to-replace-item-in-array
 }
 
 const addElement = (languages) => {
-
+languages.push("Ruby","Python");
+return languages;
 }
 
 const addNumberElement = (numbers) => {
-
+numbers.unshift(-2,-1);
+return numbers;
 }
 
 const removeFirst = (languages) => {
-
+languages.shift();
+return languages;
 }
 
 const removeLast = (languages) => {
-
+languages.pop();
+return languages;
+//https://www.w3schools.com/jsref/jsref_pop.asp
 }
 
 const convertStrToArr = (social_arr) => {
@@ -96,13 +103,16 @@ const convertStrToArr = (social_arr) => {
 }
 
 const convertArrToStr = (languages) => {
-
+var x= languages.join();
+return x;
 }
 
 const sortArr = (social_arr) => {
-
+var x= social_arr.sort();
+return x;
 }
 
 const invertArr = (social_arr) => {
-
+var x= social_arr.reverse();
+return x;
 }
